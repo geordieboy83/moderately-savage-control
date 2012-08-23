@@ -1,0 +1,23 @@
+#define e 0.05f
+
+#define START 0
+#define END 255
+#define LOST 254
+#define N 1
+#define Ne 11
+#define NE 2
+#define NEe 22
+#define E 3
+#define Ee 33
+#define SE 4
+#define SEe 44
+#define S 5
+#define Se 55
+#define SW 6
+#define SWe 66
+#define W 7
+#define We 77
+#define NW 8
+#define NWe 88
+#define STILL 9
+#define STILLe 99

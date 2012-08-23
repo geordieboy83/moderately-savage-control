@@ -1,0 +1,19 @@
+#include "GestureJointUp.h"
+
+GestureJointUp ::	GestureJointUp(float distanceTolerance, 
+			unsigned int levelOfStrictness,
+			unsigned int lostTolerance, unsigned int stillTolerance,
+			unsigned int Length_Y,
+			ColourToTrack* primary, ColourToTrack* secondary):
+SpringGesture(distanceTolerance)
+{
+	regression[0]=new GestureUp(levelOfStrictness,lostTolerance,stillTolerance,Length_Y,primary);
+	regression[1]=new GestureUp(levelOfStrictness,lostTolerance,stillTolerance,Length_Y,secondary);
+}
+		
+GestureJointUp::~GestureJointUp()
+{
+	delete regression[0];
+	delete regression[1];
+}
+
