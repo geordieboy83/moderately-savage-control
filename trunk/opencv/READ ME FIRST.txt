@@ -1,0 +1,21 @@
+Debug and Release executables are provided in their respectively named folders.
+
+
+
+For the program to run, a working camera must be connected to the computer.
+
+While the camera window is in focus:
+
+- Click to up to two points of your preference to select colours for motion tracking.
+
+- With one colour selected you can track rightward, leftward, downward and upward swiping by pressing keys 1 to 4 respectively.
+
+- With an additional colour selected, keys 5, 6 and 7 enable tracking of joint down (clench), joint up (unclench) and scurrying respectively.
+
+- Press R to trigger drawing of the selected colour trajectories.
+
+
+
+For a demo reel, see http://www.youtube.com/watch?v=MJX_BTys7gA
+
+As patents are pending, access to this video may be revoked, prohibited or otherwise restricted at any moment.

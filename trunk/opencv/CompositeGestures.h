@@ -1,0 +1,18 @@
+#pragma once
+
+#include "GestureSequence.h"
+#include "GestureRegressiveDown.h"
+#include "GestureRegressiveLeft.h"
+#include "GestureRegressiveRight.h"
+#include "GestureRegressiveUp.h"
+#include "AsynchronousCompoundGesture.h"
+#include "GestureScurry.h"
+#include "SpringGesture.h"
+#include "GestureJointDown.h"
+#include "GestureJointUp.h"
+#include "GestureRotateLeftDown.h"
+#include "GestureRotateLeftUp.h"
+#include "GestureRotateRightDown.h"
+#include "GestureRotateRightUp.h"
+#include "GestureRotateRegressiveLeftDown.h"
+#include "GestureRotateRegressiveRightDown.h"
