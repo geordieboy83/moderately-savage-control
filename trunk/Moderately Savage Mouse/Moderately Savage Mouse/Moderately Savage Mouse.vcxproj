@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{991489BF-C353-4307-86FB-0A6C5A5C9DCA}</ProjectGuid>
+    <RootNamespace>ModeratelySavageMouse</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\..\opencv\opencv;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\..\opencv\opencv;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)\..\opencv\opencv;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\..\opencv\opencv;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_calib3d230d.lib;opencv_contrib230d.lib;opencv_core230d.lib;opencv_features2d230d.lib;opencv_flann230d.lib;opencv_gpu230d.lib;opencv_haartraining_engined.lib;opencv_highgui230d.lib;opencv_imgproc230d.lib;opencv_legacy230d.lib;opencv_ml230d.lib;opencv_objdetect230d.lib;opencv_video230d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_calib3d230.lib;opencv_contrib230.lib;opencv_core230.lib;opencv_features2d230.lib;opencv_flann230.lib;opencv_gpu230.lib;opencv_highgui230.lib;opencv_imgproc230.lib;opencv_legacy230.lib;opencv_ml230.lib;opencv_objdetect230.lib;opencv_video230.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\opencv\AsynchronousCompoundGesture.cpp" />
+    <ClCompile Include="..\..\opencv\BasicGesture.cpp" />
+    <ClCompile Include="..\..\opencv\colortracking.cpp" />
+    <ClCompile Include="..\..\opencv\ColourRoute.cpp" />
+    <ClCompile Include="..\..\opencv\ColourToTrack.cpp" />
+    <ClCompile Include="..\..\opencv\ColourTracker.cpp" />
+    <ClCompile Include="..\..\opencv\GestureDown.cpp" />
+    <ClCompile Include="..\..\opencv\GestureJointDown.cpp" />
+    <ClCompile Include="..\..\opencv\GestureJointUp.cpp" />
+    <ClCompile Include="..\..\opencv\GestureLeft.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRegressiveDown.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRegressiveLeft.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRegressiveRight.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRegressiveUp.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRight.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRotateLeftDown.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRotateLeftUp.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRotateRegressiveLeftDown.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRotateRegressiveRightDown.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRotateRightDown.cpp" />
+    <ClCompile Include="..\..\opencv\GestureRotateRightUp.cpp" />
+    <ClCompile Include="..\..\opencv\GestureScurry.cpp" />
+    <ClCompile Include="..\..\opencv\GestureSequence.cpp" />
+    <ClCompile Include="..\..\opencv\GestureUp.cpp" />
+    <ClCompile Include="..\..\opencv\MovementDecoder.cpp" />
+    <ClCompile Include="..\..\opencv\SpringGesture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\opencv\AsynchronousCompoundGesture.h" />
+    <ClInclude Include="..\..\opencv\BasicGesture.h" />
+    <ClInclude Include="..\..\opencv\ColourRoute.h" />
+    <ClInclude Include="..\..\opencv\ColourToTrack.h" />
+    <ClInclude Include="..\..\opencv\ColourTracker.h" />
+    <ClInclude Include="..\..\opencv\CompositeGestures.h" />
+    <ClInclude Include="..\..\opencv\GestureDown.h" />
+    <ClInclude Include="..\..\opencv\GestureJointDown.h" />
+    <ClInclude Include="..\..\opencv\GestureJointUp.h" />
+    <ClInclude Include="..\..\opencv\GestureLeft.h" />
+    <ClInclude Include="..\..\opencv\GestureRegressiveDown.h" />
+    <ClInclude Include="..\..\opencv\GestureRegressiveLeft.h" />
+    <ClInclude Include="..\..\opencv\GestureRegressiveRight.h" />
+    <ClInclude Include="..\..\opencv\GestureRegressiveUp.h" />
+    <ClInclude Include="..\..\opencv\GestureRight.h" />
+    <ClInclude Include="..\..\opencv\GestureRotateLeftDown.h" />
+    <ClInclude Include="..\..\opencv\GestureRotateLeftUp.h" />
+    <ClInclude Include="..\..\opencv\GestureRotateRegressiveLeftDown.h" />
+    <ClInclude Include="..\..\opencv\GestureRotateRegressiveRightDown.h" />
+    <ClInclude Include="..\..\opencv\GestureRotateRightDown.h" />
+    <ClInclude Include="..\..\opencv\GestureRotateRightUp.h" />
+    <ClInclude Include="..\..\opencv\Gestures.h" />
+    <ClInclude Include="..\..\opencv\GestureScurry.h" />
+    <ClInclude Include="..\..\opencv\GestureSequence.h" />
+    <ClInclude Include="..\..\opencv\GestureUp.h" />
+    <ClInclude Include="..\..\opencv\MovementDecoder.h" />
+    <ClInclude Include="..\..\opencv\Movements.h" />
+    <ClInclude Include="..\..\opencv\SimpleGestures.h" />
+    <ClInclude Include="..\..\opencv\SpringGesture.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
