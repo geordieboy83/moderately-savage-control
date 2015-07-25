@@ -1,0 +1,1 @@
+Control of the mouse via colour tracking from the first camera connected to the computer.
